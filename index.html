@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title class="geek">tree</title>
+</head>
+<body>
+	<!--properties attributes of object-->
+
+	<h1 id="myid" class="myclass">i am learning js</h1>
+
+	<p id="myidi">hello everyone</p>
+	
+
+</body>
+<script>
+	//attribute properties name, value
+	var result=document.getElementById("myid");
+	/*document.write(result.attributes[0].nodeName+ " = ");
+	document.write(result.attributes[0].nodeValue+ "<br>");
+	document.write(result.attributes[1].nodeName+ " = ");
+	document.write(result.attributes[1].nodeValue);*/
+
+	var len=result.attributes.length;
+	for (let i =0; i <len; i++) {
+
+	document.write(result.attributes[i].nme+ " = ");
+	document.write(result.attributes[i].value+ "<br>");
+	}
+
+</script>
+</html>
